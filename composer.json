@@ -7,7 +7,8 @@
             "": "src/"
         },
         "files": [
-            "app/AppKernel.php"
+            "app/AppKernel.php",
+            "app/MicroKernel.php"
         ]
     },
     "autoload-dev": {
