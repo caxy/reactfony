@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "37160a8d99cf343b10121e43754d7921",
-    "content-hash": "91f10dcb10ad25d788e9f7fe65317d04",
+    "hash": "6a736c0c4846d144f6893858a5c6a583",
+    "content-hash": "a9e5d237f10c6c9f9e9c9847116890ae",
     "packages": [
         {
             "name": "bangpound/kernel-traits",

@@ -1,20 +1,14 @@
 {
-    "name": "janit/v8fony",
-    "license": "proprietary",
+    "name": "caxy/v8fony",
+    "license": "MIT",
     "type": "project",
+    "description": "v8js symfony sandbox",
     "autoload": {
-        "psr-4": {
-            "": "src/"
-        },
-        "files": [
-            "app/AppKernel.php",
-            "app/MicroKernel.php"
-        ]
+        "psr-4": { "": "src/" },
+        "classmap": [ "app/AppKernel.php", "app/AppCache.php", "app/MicroKernel.php" ]
     },
     "autoload-dev": {
-        "psr-4": {
-            "Tests\\": "tests/"
-        }
+        "psr-4": { "Tests\\": "tests/" }
     },
     "require": {
         "php": ">=5.5.9",
@@ -60,6 +54,9 @@
         "symfony-tests-dir": "tests",
         "symfony-assets-install": "relative",
         "incenteev-parameters": {
+            "env-map": {
+                "secret": "SYMFONY__SECRET"
+            },
             "file": "app/config/parameters.yml"
         }
     }
