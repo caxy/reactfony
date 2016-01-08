@@ -1,0 +1,21 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}Angular 2 QuickStart{% endblock %}
+
+{% block javascripts %}
+    <!-- 1. Load libraries -->
+    <script src="{{ asset('bundles/app/js/angular2-polyfills.js') }}"></script>
+    <script src="{{ asset('bundles/app/js/Rx.umd.js') }}"></script>
+    <script src="{{ asset('bundles/app/js/angular2-all.umd.js') }}"></script>
+    <script src="{{ asset('bundles/app/js/preboot.js') }}"></script>
+    <!-- 2. Load our modules -->
+    <script src="{{ asset('angular2-quickstart/app/app.component.js') }}"></script>
+    <script src="{{ asset('angular2-quickstart/app/boot.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+    <my-app>Loading...</my-app>
+    <script>
+        preboot.start();
+    </script>
+{% endblock %}
