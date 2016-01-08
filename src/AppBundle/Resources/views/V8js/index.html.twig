@@ -1,0 +1,21 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}AppBundle:V8js:index{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('bundles/app/css/style.css') }}">
+{% endblock %}
+
+{% block body %}
+    <div class="container-fluid">
+        <h1>Welcome to the V8js:index page</h1>
+        <div class="row">
+            <div class="col-md-5">
+                {{ form(form) }}
+            </div>
+            <div class="col-md-7">
+                {{ dump(output) }}
+            </div>
+        </div>
+    </div>
+{% endblock %}
