@@ -25,3 +25,14 @@ monolog:
             level: debug
         console:
             type:  console
+
+services:
+    twig_dump:
+        class: AppBundle\Twig\DumpExtension
+        arguments:
+            - "@twig_dump.cloner"
+        tags:
+            - { name: twig.extension }
+
+    twig_dump.cloner:
+        class: Symfony\Component\VarDumper\Cloner\VarCloner
