@@ -11,6 +11,7 @@ use Symfony\Component\Routing\RouteCollectionBuilder;
 class MicroKernel extends Kernel
 {
     use MicroKernelTrait;
+    use \Bangpound\Kernel\ClassBasedNameTrait;
 
     public function registerBundles()
     {
