@@ -17,7 +17,6 @@ class MicroKernel extends Kernel
         $bundles =  array(
             new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
             new Symfony\Bundle\TwigBundle\TwigBundle(),
-            new AppBundle\AppBundle(),
             );
         
         return $bundles;
